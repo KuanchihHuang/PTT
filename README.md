@@ -37,6 +37,16 @@ python test.py --cfg_file cfgs/waymo_models/ptt_32frames.yaml  --batch_size  1 \
 DATA_CONFIG.ROI_BOXES_PATH.test ../output/waymo_models/centerpoint_4frames/default/eval/epoch_36/val/default/result.pkl
 ```
 
+## Log
+
+The performance of PTT with 32 frames on Waymo valdation split are as follows. 
+
+|         |  % Training | Car AP/APH | Ped AP/APH | Cyc AP/APH  | Log file |
+|---------|:-:|--------|--------|--------|--------|
+|  Level 1 | 100% |   83.53/83.05 | 86.13/83.42  |  78.55/77.85  | [Download](https://drive.google.com/file/d/18qlm1oJwwlac0l4n1j5A_E5Sojc79Wbu/view?usp=sharing)
+|  Level 2 | 100% |   76.30/75.84 | 79.33/76.67  |  76.30/75.61  |
+
+
 ## Acknowlegment
 
 Our codes are mainly based on [MPPNet](https://github.com/open-mmlab/OpenPCDet/blob/master/docs/guidelines_of_approaches/mppnet.md) and [MSF](https://github.com/skyhehe123/MSF). Thanks for their contributions!
